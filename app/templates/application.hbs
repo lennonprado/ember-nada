@@ -1,5 +1,21 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<nav>
+  <ul class="nav nav-tabs">
+    <li role="presentation">{{#link-to 'search'}} Ir a la búsqueda {{/link-to}}</li>
+    <li role="presentation">{{#link-to 'favorites'}} Ir a favoritos {{/link-to}}</li>
+    <li role="presentation">{{#link-to 'favorites.new'}} Ir a nuevo {{/link-to}}</li>
+
+  </ul>
+
+
+
+
+</nav>
+<div class="container">
+
+<h1 class="text-center"><img src="https://www.logodesignlove.com/images/bad/nasa-logo-meatball.jpg" /></h1>
+
+
+
 
 {{outlet}}
+</div>

@@ -1,0 +1,9 @@
+<h1>Agregar Favorito</h1>
+{{outlet}}
+
+<h2>Listado de Favoritos</h2>
+{{#each model as |elemento|}}
+
+  {{ image-item title=elemento.title descripcion=elemento.description url=elemento.url }}
+
+{{/each}}

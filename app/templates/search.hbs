@@ -1,0 +1,21 @@
+
+<div class="form-group">
+
+{{!--#if ver--}}
+{{input value=searchTerm type='text' class='form-control'}}
+{{!--/if--}}
+
+</div>
+
+
+<!--<button {{action "doSearch" serchTerm }}>Daleee</button>-->
+
+
+<div class="text-center">
+  <button {{ action "irImages" searchTerm }} class="btn btn-primary btn-lg">Buscar</button>
+</div>
+
+<p>{{serchTerm}}</p>
+
+
+{{outlet}}
