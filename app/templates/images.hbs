@@ -1,10 +1,11 @@
+
 <ul class="list-group">
-
-
 
 {{#each model.collection.items as |elemento|}}
 
 {{ image-item title=elemento.data.firstObject.title descripcion=elemento.data.firstObject.description url=elemento.links.firstObject.href }}
+
+<button {{ action "addBookmarks" elemento.links.firstObject.href }}>Add Bookmarks</button>
 
 {{/each}}
 </ul>
