@@ -6,4 +6,7 @@
 
   {{ image-item title=elemento.title descripcion=elemento.description url=elemento.url }}
 
+  {{#link-to 'favorite' elemento.id  }} ver {{/link-to}}
+
+
 {{/each}}

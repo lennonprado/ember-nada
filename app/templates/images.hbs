@@ -7,6 +7,8 @@
 
 <button {{ action "addBookmarks" elemento.links.firstObject.href }}>Add Bookmarks</button>
 
+{{#link-to 'image' elemento.data.firstObject.nasa_id }} ver imagen {{/link-to}}
+
 {{/each}}
 </ul>
 

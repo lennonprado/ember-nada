@@ -1,13 +1,20 @@
 <li class="list-group-item">
   <div class="row">
       <div class="col-md-3">
-
+        {{#if ver}}
         <img alt="{{title}}" src="{{url}}" class="img-rounded" width="200"  />
+        {{/if}}
       </div>
       <div class="col-md-9">
         <h2>{{title}}</h2>
         <p>{{descripcion}}</p>
-        {{url}} 
+        {{url}}
+        {{#if ver}}
+<button {{ action "toggleImage" }}>Ocultar imagen</button>
+{{else}}
+<button {{ action "toggleImage" }}>Ver imagen</button>
+{{/if}}
+
       </div>
   </div>
 </li>
